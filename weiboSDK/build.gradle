@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.1.0"
+    buildToolsVersion "19.1"
 
     defaultConfig {
-        minSdkVersion 18
-        targetSdkVersion 18
+        minSdkVersion 8
+        targetSdkVersion 19
     }
 
     buildTypes {
@@ -18,6 +18,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.+'
-    compile files('libs/weibosdkcore_release.jar')
+    compile files('libs/weibosdkcore.jar')
+    compile 'com.android.support:support-v4:24.0.0-alpha1'
 }

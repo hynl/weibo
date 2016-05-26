@@ -1,2 +1,3 @@
-include ':app'
+include ':app', ':libzxing'
 include ':weiboSDK'
+include ':pulltorefresh'

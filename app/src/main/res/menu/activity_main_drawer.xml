@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Theme"
+            android:title="我的主题Style" />
+        <item
+            android:id="@+id/Shake"
+            android:title="我的微博摇一摇Shake" />
+        <item
+            android:id="@+id/Scan"
+            android:title="我的微博扫一扫Scan" />
+        <item
+            android:id="@+id/Roulette"
+            android:title="我的微博大轮盘Roulette" />
+    </group>
+
+    <item android:title="管理中心">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:title="退出" />
+            <item
+                android:id="@+id/byebye"
+                android:title="账号注销" />
+        </menu>
+    </item>
+
+</menu>

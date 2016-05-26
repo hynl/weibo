@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal" >
+
+    <!-- scaleType.setScaletype填充整个imageview-->
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:padding="16dp" >
+<!--姓名-->
+        <TextView
+            android:id="@+id/tv_subhead"
+            style="@style/TextViewSubhead"
+            android:text="杨松" />
+        <ImageView
+            android:id="@+id/collection_item"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_collection"/>
+<!--说明文字-->
+        <TextView
+            android:id="@+id/tv_caption"
+            style="@style/TextViewCaption"
+            android:layout_alignParentBottom="true"
+            android:text="hynl的微博"
+            android:textColor="@color/txt_gray" />
+    </RelativeLayout>
+
+</LinearLayout>
